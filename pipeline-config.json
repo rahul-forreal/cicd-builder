@@ -1,0 +1,10 @@
+{
+  "branch": "main",
+  "pipeline": [
+    { "stage": "clone",  "command": "git clone $REPO_URL build" },
+    { "stage": "install","command": "npm install" },
+    { "stage": "test",   "command": "npm test" },
+    { "stage": "build",  "command": "npm run build" },
+    { "stage": "deploy", "command": "DEPLOY_SCRIPT" }
+  ]
+}

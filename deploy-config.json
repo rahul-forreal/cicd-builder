@@ -1,0 +1,10 @@
+{
+  "services": {
+    "primaryApp": {
+      "target": "render",
+      "serviceId": "srv-d4m1dvqli9vc73ei8cf0",
+      "branch": "main",
+      "enabled": true
+    }
+  }
+}
