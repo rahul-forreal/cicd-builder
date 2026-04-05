@@ -32,7 +32,7 @@ function loadCiConfig(workspacePath){
     const raw=fs.readFileSync(configPath,"utf-8");
     return {...defaultConfig,...JSON.parse(raw)};
   } catch (error) {
-    console.log("Invalid .cicd.json, using defaults.");
+    console.log("Invalid .cicd.json, using defaults!");
     return defaultConfig;
   }
 }
